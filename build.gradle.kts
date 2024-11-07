@@ -27,7 +27,7 @@ dependencies {
     compileOnly("me.clip:placeholderapi:2.11.5")
 
     // Libraries
-    implementation("org.lushplugins:LushLib:0.8.3")
+    implementation("org.lushplugins:LushLib:0.10.4")
 }
 
 tasks {
