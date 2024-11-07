@@ -24,7 +24,7 @@ dependencies {
 
     // Soft Dependencies
     compileOnly("com.github.Gecolay.GMusic:GMusic:ceb42cdd2f")
-    compileOnly("me.clip:placeholderapi:2.11.5")
+    compileOnly("me.clip:placeholderapi:2.11.6")
 
     // Libraries
     implementation("org.lushplugins:LushLib:0.8.3")
