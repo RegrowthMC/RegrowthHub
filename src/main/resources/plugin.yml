@@ -1,0 +1,4 @@
+name: RegrowthHub
+version: '1.0.0'
+main: org.lushplugins.regrowthhub.RegrowthHub
+api-version: '1.21'
