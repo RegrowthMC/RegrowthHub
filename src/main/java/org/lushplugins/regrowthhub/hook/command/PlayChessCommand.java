@@ -1,10 +1,14 @@
 package org.lushplugins.regrowthhub.hook.command;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.lushplugins.lushlib.command.Command;
 import org.lushplugins.lushlib.libraries.chatcolor.ChatColorHandler;
+
+import java.util.List;
 
 public class PlayChessCommand extends Command {
 
@@ -26,5 +30,10 @@ public class PlayChessCommand extends Command {
 
         player.performCommand(String.format("chess challenge player LobbyBoard %s white", args[0]));
         return true;
+    }
+
+    @Override
+    public @Nullable List<String> tabComplete(@NotNull CommandSender sender, org.bukkit.command.@NotNull Command command, @NotNull String label, @NotNull String[] args, @NotNull String[] fullArgs) {
+        return args.length == 1 ? Bukkit.getOnlinePlayers().stream().map(Player::getName).toList() : null;
     }
 }

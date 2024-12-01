@@ -5,6 +5,7 @@ import org.lushplugins.lushlib.plugin.SpigotPlugin;
 import org.lushplugins.regrowthhub.hook.command.PlayChessCommand;
 import org.lushplugins.regrowthhub.hook.listener.PlayerListener;
 
+// TODO: Consider merging into main Regrowth plugin as modules
 public final class RegrowthHub extends SpigotPlugin {
 
     @Override
