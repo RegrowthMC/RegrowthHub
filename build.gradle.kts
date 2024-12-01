@@ -5,17 +5,14 @@ plugins {
 }
 
 group = "org.lushplugins"
-version = "1.0.0"
+version = "1.1.0"
 
 repositories {
     mavenLocal()
     mavenCentral()
     maven("https://oss.sonatype.org/content/repositories/snapshots/")
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/") // Spigot
-    maven("https://repo.lushplugins.org/releases/") // LushLib
     maven("https://repo.lushplugins.org/snapshots/") // LushLib
-    maven("https://repo.helpch.at/releases/") // PlaceholderAPI
-    maven("https://jitpack.io/") // GMusic
 }
 
 dependencies {
@@ -23,18 +20,15 @@ dependencies {
     compileOnly("org.spigotmc:spigot-api:1.21.3-R0.1-SNAPSHOT")
 
     // Soft Dependencies
-    compileOnly("com.github.Gecolay.GMusic:GMusic:ceb42cdd2f")
-    compileOnly("me.clip:placeholderapi:2.11.6")
 
     // Libraries
-    implementation("org.lushplugins:LushLib:0.10.4")
+    implementation("org.lushplugins:LushLib:0.10.19")
 }
 
 tasks {
 
     shadowJar {
-        relocate("org.bstats", "org.lushplugins.lushrewards.libraries.bstats")
-        relocate("org.lushplugins.lushlib", "org.lushplugins.lushrewards.libraries.lushlib")
+        relocate("org.lushplugins.lushlib", "org.lushplugins.regrowthhub.libraries.lushlib")
 
         minimize()
 

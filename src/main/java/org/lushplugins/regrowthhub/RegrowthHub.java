@@ -2,6 +2,7 @@ package org.lushplugins.regrowthhub;
 
 import org.lushplugins.lushlib.LushLib;
 import org.lushplugins.lushlib.plugin.SpigotPlugin;
+import org.lushplugins.regrowthhub.hook.command.PlayChessCommand;
 import org.lushplugins.regrowthhub.hook.listener.PlayerListener;
 
 public final class RegrowthHub extends SpigotPlugin {
@@ -13,7 +14,11 @@ public final class RegrowthHub extends SpigotPlugin {
 
     @Override
     public void onEnable() {
-        new PlayerListener().registerListeners();
+        registerListeners(
+            new PlayerListener()
+        );
+
+        registerCommand(new PlayChessCommand());
     }
 
     @Override

@@ -3,15 +3,15 @@ package org.lushplugins.regrowthhub.hook.listener;
 import org.bukkit.Material;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
-import org.lushplugins.lushlib.listener.EventListener;
 
 import java.util.Collection;
 import java.util.List;
 
-public class PlayerListener implements EventListener {
+public class PlayerListener implements Listener {
     private static final Collection<Material> HORSE_ARMOR = List.of(
         Material.LEATHER_HORSE_ARMOR,
         Material.IRON_HORSE_ARMOR,
