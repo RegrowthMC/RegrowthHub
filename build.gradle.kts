@@ -22,7 +22,7 @@ dependencies {
     // Soft Dependencies
 
     // Libraries
-    implementation("org.lushplugins:LushLib:0.10.19")
+    implementation("org.lushplugins:LushLib:0.10.22")
 }
 
 tasks {
