@@ -1,4 +1,4 @@
-package org.lushplugins.regrowthhub.hook.command;
+package org.lushplugins.regrowthhub.command;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;

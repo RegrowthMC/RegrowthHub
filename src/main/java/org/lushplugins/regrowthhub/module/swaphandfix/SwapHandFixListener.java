@@ -1,4 +1,4 @@
-package org.lushplugins.regrowthhub.hook.listener;
+package org.lushplugins.regrowthhub.module.swaphandfix;
 
 import org.bukkit.Material;
 import org.bukkit.event.Event;
@@ -11,7 +11,7 @@ import org.bukkit.inventory.ItemStack;
 import java.util.Collection;
 import java.util.List;
 
-public class PlayerListener implements Listener {
+public class SwapHandFixListener implements Listener {
     private static final Collection<Material> HORSE_ARMOR = List.of(
         Material.LEATHER_HORSE_ARMOR,
         Material.IRON_HORSE_ARMOR,
