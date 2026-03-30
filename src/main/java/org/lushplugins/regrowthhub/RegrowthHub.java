@@ -1,7 +1,7 @@
 package org.lushplugins.regrowthhub;
 
 import org.bukkit.Bukkit;
-import org.lushplugins.lushlib.plugin.SpigotPlugin;
+import org.lushplugins.lushlib.utils.plugin.SpigotPlugin;
 import org.lushplugins.regrowthhub.command.PlayChessCommand;
 import org.lushplugins.regrowthhub.module.staticeffects.DuckyRainbowTask;
 import org.lushplugins.regrowthhub.module.staticeffects.PicnicHeartsTask;
